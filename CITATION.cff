@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this package, please cite the Zenodo record and the associated article."
+title: "Free-fall model misspecification and algebraic target circularity: reproducibility package"
+type: software
+version: 1.0.0
+date-released: 2026-07-29
+doi: "10.5281/zenodo.21694213"
+authors:
+  - family-names: "Brito"
+    given-names: "Auri"
+    affiliation: "Instituto de Física, Universidade Federal de Mato Grosso"
+  - family-names: "Amorim"
+    given-names: "Matheus Xavier"
+    orcid: "https://orcid.org/0009-0006-9093-7543"
+    affiliation: "Instituto de Física, Universidade Federal de Mato Grosso"
+  - family-names: "Lima"
+    given-names: "Erika N."
+    orcid: "https://orcid.org/0000-0002-0670-9737"
+    affiliation: "Instituto de Física, Universidade Federal de Mato Grosso"
+keywords:
+  - free fall
+  - gravitational acceleration
+  - model misspecification
+  - parameter identifiability
+  - machine learning
+  - target leakage
+  - algebraic circularity
+  - reproducible research
