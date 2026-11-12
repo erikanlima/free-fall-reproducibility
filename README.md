@@ -2,15 +2,13 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21694213.svg)](https://doi.org/10.5281/zenodo.21694213)
 
-Version 1.0.0 reproducibility package for the study:
+Version 2.0.0 reproducibility package for the study:
 
-**Kinematic model misspecification and algebraic target circularity in a machine-learning analysis of free-fall measurements**
+**Boundary-condition misspecification and non-independent algebraic targets in a machine-learning analysis of free-fall measurements**
 
-## Archived release
+## Archived releases
 
-Version 1.0.0 is archived on Zenodo:
-
-**DOI:** [10.5281/zenodo.21694213](https://doi.org/10.5281/zenodo.21694213)
+Version 1.0.0 is archived on Zenodo: [10.5281/zenodo.21694213](https://doi.org/10.5281/zenodo.21694213). Version 2.0.0 corrects the release geometry and the reference value of gravity; see `CHANGELOG.md`.
 
 ## Contents
 
@@ -19,11 +17,11 @@ This archive contains the experimental data, Python source code, numerical outpu
 ```text
 .
 ├── ACQUISITION_PROTOCOL.md
+├── CHANGELOG.md
 ├── CITATION.cff
 ├── LICENSE_CODE.txt
 ├── LICENSE_DATA.txt
 ├── README.md
-├── ZENODO_METADATA.md
 ├── requirements.txt
 ├── environment_versions.txt
 ├── run_all.sh
@@ -38,7 +36,7 @@ This archive contains the experimental data, Python source code, numerical outpu
 │   ├── 03_ml_pipeline_and_circularity.py
 │   ├── 04_diagnostics.py
 │   ├── 05_generate_figures.py
-│   └── 06_generate_apparatus_figure.py
+│   └── 07_drag_bound.py
 ├── results/
 └── figures/
 ```
@@ -73,9 +71,10 @@ The scripts write numerical outputs to `results/` and regenerate the figures in 
 The package reproduces:
 
 - classical estimates based on `g = 2H/t^2`;
-- effective-linear and nominal-geometry kinematic sensitivity fits;
+- effective-linear and fixed-geometry (h0 = 7 mm) kinematic fits;
 - residual regressions and cross-block checks;
-- timing-offset fits and parameter-correlation diagnostics;
+- geometry-constrained timing-offset fits and g-delta correlation diagnostics;
+- a bound on the drag and buoyancy bias in g;
 - diagnostic machine-learning models and exact algebraic-target baseline;
 - ablation and redundant-feature permutation diagnostics;
 - all data-derived figures.
@@ -86,13 +85,13 @@ The machine-learning target is exactly reconstructible from the input variables 
 
 Please cite the archived software package as:
 
-> Brito, A., Amorim, M. X., & Lima, E. N. (2026). *Free-fall model misspecification and algebraic target circularity: reproducibility package* (Version 1.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.21694213
+> Brito, A., Amorim, M. X., & Lima, E. N. (2026). *Free-fall model misspecification and algebraic target circularity: reproducibility package* (Version 2.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.21694213
 
 A machine-readable citation is also provided in `CITATION.cff`.
 
 ## Authorship
 
-Auri Brito and Matheus Xavier Amorim contributed equally to this work. Erika N. Lima is the corresponding author.
+Auiri Brito and Matheus Xavier Amorim contributed equally to this work. Erika N. Lima is the corresponding author.
 
 ## Licenses
 

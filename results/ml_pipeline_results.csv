@@ -1,8 +1,8 @@
 configuration,algorithm,hyperparameters,loo_cv_rmse_target,n_train,n_test,test_mae_g_m_s2,test_rmse_g_m_s2
-Model A: Block 1 -> Block 2,random_forest,"{""max_depth"": 4, ""n_estimators"": 50}",0.5003332966020202,75.0,44,0.15717572135025623,0.30386703533915715
-Model A: Block 2 -> Block 1,gradient_boosting,"{""learning_rate"": 0.1, ""max_depth"": 2, ""n_estimators"": 100}",0.7166815803447734,44.0,75,0.3887731945617075,0.5509712018891959
-Model B: Block 1 -> Block 2,ridge,"{""ridge__alpha"": 0.1}",0.38156973588023324,75.0,44,0.22425651853869139,0.31156707399970396
-Model B: Block 2 -> Block 1,ridge,"{""ridge__alpha"": 0.1}",0.2696314924355442,44.0,75,0.3502433069169038,0.47228975547777957
+Model A: Block 1 -> Block 2,random_forest,"{""max_depth"": 4, ""n_estimators"": 50}",0.5003332966020202,75.0,44,0.15717572135025676,0.3038670353391589
+Model A: Block 2 -> Block 1,gradient_boosting,"{""learning_rate"": 0.1, ""max_depth"": 2, ""n_estimators"": 100}",0.7166815803447735,44.0,75,0.3887731945617073,0.5509712018891959
+Model B: Block 1 -> Block 2,ridge,"{""ridge__alpha"": 0.1}",0.38156973588023346,75.0,44,0.22425651853869139,0.31156707399970396
+Model B: Block 2 -> Block 1,ridge,"{""ridge__alpha"": 0.1}",0.26963149243554513,44.0,75,0.3502433069168877,0.47228975547776103
 Mean-residual baseline: Block 1 -> Block 2,constant_mean_residual,{},,75.0,44,1.6765419438552422,2.974393257105354
-Mean-residual baseline: Block 2 -> Block 1,constant_mean_residual,{},,44.0,75,2.205256640386352,2.7366610768996424
+Mean-residual baseline: Block 2 -> Block 1,constant_mean_residual,{},,44.0,75,2.205256640386351,2.7366610768996424
 Exact algebraic target baseline,y = 2H/t^2 - g_ref,{},0.0,,119,0.0,0.0

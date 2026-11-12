@@ -14,6 +14,6 @@ cd "$REPO_DIR/src"
 "$PYTHON_BIN" 02_h2_mechanism_test.py
 "$PYTHON_BIN" 03_ml_pipeline_and_circularity.py
 "$PYTHON_BIN" 04_diagnostics.py
-"$PYTHON_BIN" 06_generate_apparatus_figure.py
+"$PYTHON_BIN" 07_drag_bound.py
 "$PYTHON_BIN" 05_generate_figures.py
 echo "Completed. Results: $REPO_DIR/results; figures: $REPO_DIR/figures"

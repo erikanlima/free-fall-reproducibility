@@ -12,10 +12,13 @@ Two models are reported:
 
 2. Nominal-geometry sensitivity model
        H = sqrt(2*g*h0)*t + 0.5*g*t^2
-   where h0 = 1 mm is fixed from the approximate lower-surface-to-beam
-   clearance and only g is fitted. This is a sensitivity analysis, not the
-   primary estimator, because h0 and the photogate trigger threshold were not
-   calibrated with a quantified uncertainty.
+   where h0 = 7 mm is the lower-surface-to-beam clearance set with a ruler
+   graduated in 1 mm, and only g is fitted. A 0.5 mm half-division reading
+   uncertainty is propagated to v1_geometry; parallax, alignment, and trigger
+   threshold were not independently characterized.
+
+The effective pre-trigger distance implied by each free fit, v_eff^2/(2g),
+is reported with an uncertainty that includes the v_eff-g covariance.
 """
 
 from __future__ import annotations
@@ -27,6 +30,7 @@ from scipy.optimize import curve_fit
 from data_utils import (
     G_REF,
     H0_NOMINAL_M,
+    H0_READING_UNCERTAINTY_M,
     V1_GEOMETRIC_REF_M_S,
     add_classical_estimate,
     load_data,
@@ -90,6 +94,12 @@ def main() -> None:
         v_eff_err, g_eff_err = perr
         corr_v_g = pcov[0, 1] / np.sqrt(pcov[0, 0] * pcov[1, 1])
         g_geom, g_geom_err, rmse_h_geom = fit_nominal_geometry(subset)
+        # Effective pre-trigger distance from the free fit, h0_eff = v^2/(2g),
+        # with first-order propagation of the full parameter covariance.
+        h0_eff = v_eff**2 / (2.0 * g_eff)
+        grad = np.array([v_eff / g_eff, -v_eff**2 / (2.0 * g_eff**2)])
+        h0_eff_se = float(np.sqrt(grad @ pcov @ grad))
+        v1_geom_unc = 0.5 * V1_GEOMETRIC_REF_M_S * H0_READING_UNCERTAINTY_M / H0_NOMINAL_M
 
         result = {
             "sample": sample,
@@ -106,7 +116,10 @@ def main() -> None:
             "h0_nominal_m": H0_NOMINAL_M,
             "v1_geometry_ref_m_s": V1_GEOMETRIC_REF_M_S,
             "v_effective_to_geometry_ratio": v_eff / V1_GEOMETRIC_REF_M_S,
-            "h0_effective_from_v_m": v_eff**2 / (2.0 * G_REF),
+            "v1_geometry_reading_uncertainty_m_s": v1_geom_unc,
+            "v_effective_minus_geometry_m_s": v_eff - V1_GEOMETRIC_REF_M_S,
+            "h0_effective_from_fit_m": h0_eff,
+            "h0_effective_from_fit_se_m": h0_eff_se,
             "g_nominal_geometry_fit_m_s2": g_geom,
             "g_nominal_geometry_fit_se_m_s2": g_geom_err,
             "g_nominal_geometry_abs_deviation_m_s2": abs(g_geom - G_REF),
@@ -130,7 +143,7 @@ def main() -> None:
             f"Geometry check: h0={H0_NOMINAL_M*1000:.3f} mm, "
             f"v1_geom={V1_GEOMETRIC_REF_M_S:.6f} m/s, "
             f"v_eff/v1_geom={v_eff/V1_GEOMETRIC_REF_M_S:.3f}, "
-            f"h0_eff={v_eff**2/(2.0*G_REF)*1000:.3f} mm"
+            f"h0_eff=v^2/(2g)={1000*h0_eff:.3f} +/- {1000*h0_eff_se:.3f} mm"
         )
         print(
             f"Nominal-geometry sensitivity fit: g={g_geom:.6f} +/- "
