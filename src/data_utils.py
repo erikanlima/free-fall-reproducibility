@@ -9,9 +9,10 @@ from typing import Tuple
 import numpy as np
 import pandas as pd
 
-G_REF = 9.78326  # m s^-2, theoretical geodetic estimate
+G_REF = 9.78355  # m s^-2, WGS84 Somigliana + free-air correction (15.6 S, 165 m)
 SPHERE_DIAMETER_M = 0.00635
-H0_NOMINAL_M = 0.001  # lower sphere surface to photogate-1 beam
+H0_NOMINAL_M = 0.007  # lower sphere surface to photogate-1 beam, set with a ruler (1 mm graduations)
+H0_READING_UNCERTAINTY_M = 0.0005  # half of the smallest ruler division
 TRIGGER_EDGE = "onset of beam interruption"
 V1_GEOMETRIC_REF_M_S = float(np.sqrt(2.0 * G_REF * H0_NOMINAL_M))
 BLOCK_BOUNDARY = 75

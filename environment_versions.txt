@@ -1,8 +1,8 @@
 Environment used to regenerate the numerical results and figures in this package:
 
-Python 3.13.5
-NumPy 2.3.5
-pandas 2.2.3
-SciPy 1.17.0
-scikit-learn 1.8.0
-Matplotlib 3.10.8
+Python 3.13.18
+NumPy 2.5.3
+pandas 3.0.5
+SciPy 1.18.1
+scikit-learn 1.9.1
+Matplotlib 3.11.2

@@ -2,10 +2,10 @@ quantity,value
 model_A_algorithm,random_forest
 model_A_hyperparameters,"{""max_depth"": 4, ""n_estimators"": 50}"
 model_A_loo_rmse,0.5003332966020202
-model_A_test_mae,0.15717572135025623
+model_A_test_mae,0.15717572135025676
 model_B_algorithm,ridge
 model_B_hyperparameters,"{""ridge__alpha"": 0.1}"
-model_B_loo_rmse,0.38156973588023324
+model_B_loo_rmse,0.38156973588023346
 model_B_test_mae,0.22425651853869139
 permutation_n,1000
 permutation_mean_mae,3.241103044459421
