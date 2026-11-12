@@ -1,6 +1,6 @@
 # Free-fall model misspecification and algebraic target circularity
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21694213.svg)](https://doi.org/10.5281/zenodo.21694213)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24180985.svg)](https://doi.org/10.5281/zenodo.24180985)
 
 Version 2.0.0 reproducibility package for the study:
 
@@ -8,7 +8,7 @@ Version 2.0.0 reproducibility package for the study:
 
 ## Archived releases
 
-Version 1.0.0 is archived on Zenodo: [10.5281/zenodo.21694213](https://doi.org/10.5281/zenodo.21694213). Version 2.0.0 corrects the release geometry and the reference value of gravity; see `CHANGELOG.md`.
+Version 2.0.0 is archived on Zenodo: [10.5281/zenodo.24180985](https://doi.org/10.5281/zenodo.24180985). Version 1.0.0: [10.5281/zenodo.21694213](https://doi.org/10.5281/zenodo.21694213). Version 2.0.0 corrects the release geometry and the reference value of gravity; see `CHANGELOG.md`.
 
 ## Contents
 
@@ -85,7 +85,7 @@ The machine-learning target is exactly reconstructible from the input variables 
 
 Please cite the archived software package as:
 
-> Brito, A., Amorim, M. X., & Lima, E. N. (2026). *Free-fall model misspecification and algebraic target circularity: reproducibility package* (Version 2.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.21694213
+> Brito, A., Amorim, M. X., & Lima, E. N. (2026). *Free-fall model misspecification and algebraic target circularity: reproducibility package* (Version 2.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.24180985
 
 A machine-readable citation is also provided in `CITATION.cff`.
 
