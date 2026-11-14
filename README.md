@@ -4,7 +4,7 @@
 
 Version 2.0.0 reproducibility package for the study:
 
-**Boundary-condition misspecification and non-independent algebraic targets in a machine-learning analysis of free-fall measurements**
+**Initial velocity and circular targets: two pitfalls in the machine-learning analysis of free-fall data**
 
 ## Archived releases
 
