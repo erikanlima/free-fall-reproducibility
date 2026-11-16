@@ -1,10 +1,19 @@
-# Free-fall model misspecification and algebraic target circularity
+# Initial velocity and circular targets: two pitfalls in the machine-learning analysis of free-fall data
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24180985.svg)](https://doi.org/10.5281/zenodo.24180985)
 
-Version 2.0.0 reproducibility package for the study:
+Version 2.0.0 reproducibility package for the study **Initial velocity and circular targets: two pitfalls in the machine-learning analysis of free-fall data** (A. Brito, M. X. Amorim, E. N. Lima).
 
-**Initial velocity and circular targets: two pitfalls in the machine-learning analysis of free-fall data**
+## Study overview
+
+Free-fall experiments with two photogates are a standard exercise in undergraduate laboratories, and their data are increasingly used as an entry point to machine learning. The study asks what such data can actually tell us about the gravitational acceleration and about the apparatus, first when they are analysed with the simplified kinematic estimator and then when they are used to train a machine-learning model.
+
+Two problems emerge from one dataset recorded in two sequential acquisition blocks:
+
+- **Physical.** The simplified estimator assumes that the sphere starts the timed interval at rest, whereas it crosses the first photogate already moving. Including this entry velocity in the kinematic fit reproduces the value expected from the measured release geometry, but the fitted acceleration remains below the local reference, differs between blocks and is strongly coupled to the entry velocity. The data support the diagnosis, not an instrumental calibration.
+- **Methodological.** A residual target defined from the simplified estimate and a fixed reference value can be reconstructed exactly from the inputs and that same reference. Validation scores then measure approximation of a known algebraic identity, not a physical correction learned from the data.
+
+The scripts below reproduce every number and figure behind both diagnoses.
 
 ## Archived releases
 
