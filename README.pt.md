@@ -1,10 +1,10 @@
-# Velocidade inicial e alvos circulares: dois problemas na análise de dados de queda livre por aprendizado de máquina
+# Velocidade inicial e alvos circulares como fontes de erro na análise de dados de queda livre por aprendizado de máquina
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24180985.svg)](https://doi.org/10.5281/zenodo.24180985)
 
 *English version: [README.md](README.md)*
 
-Pacote de reprodutibilidade (versão 2.0.0) do estudo **Velocidade inicial e alvos circulares: dois problemas na análise de dados de queda livre por aprendizado de máquina** (A. Brito, M. X. Amorim, E. N. Lima, Instituto de Física, UFMT).
+Pacote de reprodutibilidade (versão 2.0.0) do estudo **Velocidade inicial e alvos circulares como fontes de erro na análise de dados de queda livre por aprendizado de máquina** (A. Brito, M. X. Amorim, E. N. Lima, Instituto de Física, UFMT).
 
 ## Sobre o estudo
 
