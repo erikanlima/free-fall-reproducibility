@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+### Added
+- `05_generate_figures.py --lang pt`: figures 1-3 with Portuguese labels and decimal comma (`*_pt.pdf`, `*_pt.png`); `run_all.sh` generates both languages. English figures are unchanged.
+- `README.pt.md`: Portuguese README with study overview, reproduction steps and classroom use.
+
 ## 2.0.0 (2026-11-12)
 
 ### Corrected

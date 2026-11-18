@@ -2,6 +2,8 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24180985.svg)](https://doi.org/10.5281/zenodo.24180985)
 
+*Versão em português: [README.pt.md](README.pt.md)*
+
 Version 2.0.0 reproducibility package for the study **Initial velocity and circular targets: two pitfalls in the machine-learning analysis of free-fall data** (A. Brito, M. X. Amorim, E. N. Lima).
 
 ## Study overview
@@ -73,7 +75,7 @@ python3 -m pip install -r requirements.txt
 ./run_all.sh
 ```
 
-The scripts write numerical outputs to `results/` and regenerate the figures in `figures/` as PDF and PNG files. SVG output is not generated.
+The scripts write numerical outputs to `results/` and regenerate the figures in `figures/` as PDF and PNG files. SVG output is not generated. Figures are produced in English and in Portuguese; the Portuguese versions carry the suffix `_pt` and use a decimal comma (`python3 src/05_generate_figures.py --lang pt` regenerates only these).
 
 ## Scope of the analysis
 
