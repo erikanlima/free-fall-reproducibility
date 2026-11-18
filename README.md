@@ -1,10 +1,10 @@
-# Initial velocity and circular targets: two pitfalls in the machine-learning analysis of free-fall data
+# Initial velocity and circular targets as pitfalls in the machine-learning analysis of free-fall data
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24180985.svg)](https://doi.org/10.5281/zenodo.24180985)
 
 *Versão em português: [README.pt.md](README.pt.md)*
 
-Version 2.0.0 reproducibility package for the study **Initial velocity and circular targets: two pitfalls in the machine-learning analysis of free-fall data** (A. Brito, M. X. Amorim, E. N. Lima).
+Version 2.0.0 reproducibility package for the study **Initial velocity and circular targets as pitfalls in the machine-learning analysis of free-fall data** (A. Brito, M. X. Amorim, E. N. Lima).
 
 ## Study overview
 
