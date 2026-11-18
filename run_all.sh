@@ -16,4 +16,5 @@ cd "$REPO_DIR/src"
 "$PYTHON_BIN" 04_diagnostics.py
 "$PYTHON_BIN" 07_drag_bound.py
 "$PYTHON_BIN" 05_generate_figures.py
+"$PYTHON_BIN" 05_generate_figures.py --lang pt
 echo "Completed. Results: $REPO_DIR/results; figures: $REPO_DIR/figures"
