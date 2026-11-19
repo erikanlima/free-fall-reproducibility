@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this package, please cite the Zenodo record and the associated article."
-title: "Free-fall model misspecification and algebraic target circularity: reproducibility package"
+title: "Reproducibility package for Initial velocity and circular targets as pitfalls in the machine-learning analysis of free-fall data"
 type: software
 version: 2.0.1
 date-released: 2026-11-19
