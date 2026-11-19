@@ -128,7 +128,7 @@ for yg, col, lab in [(yg1, "#7e78c7", T("Photogate 1")), (yg2, "#62b66a", T("Pho
 # h0 and H dimension arrows (left of the axis of fall)
 xa = 2.6
 ax.annotate("", xy=(xa, ysph - rs), xytext=(xa, yg1), arrowprops=dict(arrowstyle="<->", lw=1.3))
-ax.text(xa - 0.04, (ysph - rs + yg1) / 2 + 0.02, r"$h_0 = 7\ \mathrm{mm}$", ha="right", va="center", fontsize=10.5)
+ax.text(xa - 0.06, (ysph - rs + yg1) / 2 + 0.02, r"$h_0 = 7\ \mathrm{mm}$", ha="right", va="center", fontsize=10.5)
 ax.annotate("", xy=(xa, yg1), xytext=(xa, yg2), arrowprops=dict(arrowstyle="<->", lw=1.3))
 ax.text(xa - 0.12, (yg1 + yg2) / 2, r"$H$", ha="right", va="center", fontsize=14)
 ax.annotate("", xy=(3.55, 2.3), xytext=(3.55, 3.3), arrowprops=dict(arrowstyle="-|>", lw=1.6))
