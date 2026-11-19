@@ -1,6 +1,6 @@
 # Initial velocity and circular targets as pitfalls in the machine-learning analysis of free-fall data
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24180985.svg)](https://doi.org/10.5281/zenodo.24180985)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24369161.svg)](https://doi.org/10.5281/zenodo.24369161)
 
 *Versão em português: [README.pt.md](README.pt.md)*
 
@@ -19,7 +19,7 @@ The scripts below reproduce every number and figure behind both diagnoses.
 
 ## Archived releases
 
-Version 2.0.0 is archived on Zenodo: [10.5281/zenodo.24180985](https://doi.org/10.5281/zenodo.24180985). Version 1.0.0: [10.5281/zenodo.21694213](https://doi.org/10.5281/zenodo.21694213). Version 2.0.0 corrects the release geometry and the reference value of gravity; see `CHANGELOG.md`.
+Version 2.0.1 is archived on Zenodo: [10.5281/zenodo.24369161](https://doi.org/10.5281/zenodo.24369161). Version 2.0.0: [10.5281/zenodo.24180985](https://doi.org/10.5281/zenodo.24180985). Version 1.0.0: [10.5281/zenodo.21694213](https://doi.org/10.5281/zenodo.21694213). Version 2.0.0 corrects the release geometry and the reference value of gravity; see `CHANGELOG.md`. All versions: [10.5281/zenodo.21694212](https://doi.org/10.5281/zenodo.21694212).
 
 ## Contents
 
@@ -96,7 +96,7 @@ The machine-learning target is exactly reconstructible from the input variables 
 
 Please cite the archived software package as:
 
-> Brito, A., Amorim, M. X., & Lima, E. N. (2026). *Reproducibility package for Initial velocity and circular targets as pitfalls in the machine-learning analysis of free-fall data* (Version 2.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.24180985
+> Brito, A., Amorim, M. X., & Lima, E. N. (2026). *Reproducibility package for Initial velocity and circular targets as pitfalls in the machine-learning analysis of free-fall data* (Version 2.0.1) [Software]. Zenodo. https://doi.org/10.5281/zenodo.24369161
 
 A machine-readable citation is also provided in `CITATION.cff`.
 
