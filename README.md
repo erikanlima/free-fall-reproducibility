@@ -96,7 +96,7 @@ The machine-learning target is exactly reconstructible from the input variables 
 
 Please cite the archived software package as:
 
-> Brito, A., Amorim, M. X., & Lima, E. N. (2026). *Free-fall model misspecification and algebraic target circularity: reproducibility package* (Version 2.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.24180985
+> Brito, A., Amorim, M. X., & Lima, E. N. (2026). *Reproducibility package for Initial velocity and circular targets as pitfalls in the machine-learning analysis of free-fall data* (Version 2.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.24180985
 
 A machine-readable citation is also provided in `CITATION.cff`.
 

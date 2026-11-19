@@ -76,7 +76,7 @@ Os dados e o código podem ser usados diretamente em disciplinas de laboratório
 
 Cite o pacote arquivado como:
 
-> Brito, A., Amorim, M. X., & Lima, E. N. (2026). *Free-fall model misspecification and algebraic target circularity: reproducibility package* (Version 2.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.24180985
+> Brito, A., Amorim, M. X., & Lima, E. N. (2026). *Reproducibility package for Initial velocity and circular targets as pitfalls in the machine-learning analysis of free-fall data* (Version 2.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.24180985
 
 Uma citação em formato legível por máquina está em `CITATION.cff`.
 
