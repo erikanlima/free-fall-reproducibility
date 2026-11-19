@@ -124,7 +124,7 @@ for yg, col, lab in [(yg1, "#7e78c7", T("Photogate 1")), (yg2, "#62b66a", T("Pho
                                     fc=col, ec=edge, lw=1))
     ax.plot([2.37, 3.85], [yg, yg], color=edge, lw=1)
     ax.add_patch(Rectangle((1.02, yg - 0.035), 0.73, 0.07, fc="#bdbdbd", ec=edge, lw=0.6))
-    ax.text(4.6, yg, lab, va="center", fontsize=11)
+    ax.text(4.6, yg + (0.11 if yg == yg2 else 0.0), lab, va="center", fontsize=11)
 # h0 and H dimension arrows (left of the axis of fall)
 xa = 2.6
 ax.annotate("", xy=(xa, ysph - rs), xytext=(xa, yg1), arrowprops=dict(arrowstyle="<->", lw=1.3))
