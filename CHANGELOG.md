@@ -1,10 +1,16 @@
 # Changelog
 
-## Unreleased
+## 2.0.1 (2026-11-19)
 
 ### Added
 - `05_generate_figures.py --lang pt`: figures 1-3 with Portuguese labels and decimal comma (`*_pt.pdf`, `*_pt.png`); `run_all.sh` generates both languages. English figures are unchanged.
 - `README.pt.md`: Portuguese README with study overview, reproduction steps and classroom use.
+
+### Changed
+- Figure 1: label positions adjusted (h0 label clear of the support rod; Photogate 2 label above the cable).
+- README: article title updated.
+
+Data, analysis code and all numerical results are identical to 2.0.0.
 
 ## 2.0.0 (2026-11-12)
 
